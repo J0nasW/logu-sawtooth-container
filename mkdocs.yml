@@ -1,1 +1,8 @@
-site_name: LogU: Sawtooth Container Transaction Model
+site_name: LogU Sawtooth Container Transaction Model
+repo_url: https://github.com/J0nasW/logu-sawtooth-container
+nav:
+    - Home: index.md
+    - User Guide:
+        - Installation: installation.md
+    - About: about.md
+theme: readthedocs
