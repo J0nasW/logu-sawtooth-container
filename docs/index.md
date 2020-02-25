@@ -1,9 +1,12 @@
-# Container Transactons on Hyperledgers Sawtooth Blockchain
+# Container Transactons on Hyperledger Sawtooth
 
-by [J0nasW](https://github.com/J0nasW) and [LogU](https://www.logu.tuhh.de/) at Hamburg University of Engineering.
+by [J0nasW](https://github.com/J0nasW) and [LogU](https://www.logu.tuhh.de/) at Hamburg University of Engineering and forked from [sawtooth-simple-supply](https://github.com/hyperledger/education-sawtooth-simple-supply).
 
 ## Introduction
 
-This simple implementation shows a typical transaction on release orders regarding container shipment in a harbor. The container is being unloaded of a ship and a release order is generated automatically. In this process, a new transaction on the blockchain is being made and a release token for this container is generated. The token is given to the first logistic service provider (LSP) to get the container. He then gives the authority to get the container to another LSP. This process is being repeated five times (see Fig. 1). Finally the last LSP sends a truck with a valid token to the terminal. The terminal now checks, if the token hasn't expired yet and then loads the container onto the truck.
+This simple implementation shows a typical transaction of release orders regarding container shipment.
+Basically, the process starts, when a container ship is about to arrive into a harbor and the release of a specific container is pending. The ship-operator generates a release order and informs the top-level logistic service provider (LSP). The LSP now has the permission to pick up the container in form of a transaction number + pin. This transaction number is being forwarded multiple times as the top-level LSP tries to outsource the pick-up process.
+This representation of a blockchain-managed container-owner tries to eliminate the security risk of giving away the key to the conainer. Instead, the right of picking up the container itself is transfered to multiple users inside the blockchain.
+Therefore, an app called "MyContainer" is introduced.
 
 (FIGURE 1)

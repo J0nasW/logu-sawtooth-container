@@ -4,5 +4,6 @@ nav:
     - Home: index.md
     - User Guide:
         - Installation: installation.md
+        - MyContainer App: mycontainer.md
     - About: about.md
 theme: readthedocs
